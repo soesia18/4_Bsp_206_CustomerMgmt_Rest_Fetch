@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+    <script src="js/customer.js"></script>
+</head>
+<body>
+<h1>All Customers</h1>
+<form>
+    <input type="button" value="Show all customers"  onclick="getAllCustomer()">
+    <br>
+    <table id="allCustomers">
+
+    </table>
+</form>
+
+<br style="margin-bottom: 50px">
+<h1>Single Customer</h1>
+<form>
+    <input type="number" id="idSingleCustomer">
+    <input type="button" value="Details from ID" onclick="getCustomerById()">
+    <br>
+    <table id="singleCustomer"></table>
+</form>
+<br style="margin-bottom: 50px">
+<h1>Add Customer</h1>
+<form>
+    <input placeholder="ID" type="number" id="addCustomerID">
+    <input placeholder="Name" type="text" id="addCustomerName">
+    <input placeholder="Address" type="text" id="addCustomerAddress">
+    <input placeholder="Sales" type="number" id="addCustomerSales">
+    <input type="button" value="Add Customer" onclick="addCustomer()">
+    <input type="button" value="Edit Customer" onclick="editCustomer()">
+</form>
+<br style="margin-bottom: 50px">
+<h1>Delete Customer</h1>
+<form>
+    <input type="number" id="deleteID">
+    <input type="button" value="Delete by ID" onclick="deleteCustomer()">
+</form>
+
+</body>
+</html>
